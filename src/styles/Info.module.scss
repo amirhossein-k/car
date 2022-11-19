@@ -1,0 +1,263 @@
+.container{
+      width: 85%;
+      height: 620px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+      // background-color: red;
+      .container_box{
+            width: 100%;
+            min-height: 100%;
+            display: grid;
+            grid-template-columns: 810px 610px;
+            grid-template-rows: 1fr;
+          
+            .animation{
+                  overflow: hidden;
+                  position: relative;
+                  
+                 .pattern{
+                        width: 100%;
+                        height: 100%;
+                        //
+                        // right: 0;
+                        background-image: url('../public/circle.gif');
+                        // background-color: blanchedalmond;
+                        position: relative;
+                        
+                        .car{
+                              z-index: 55;
+                              position: absolute;
+                              left: 150px;
+                              top: 150px;
+                              transform: rotateZ(-1deg) ;
+                              transform:perspective(-10px);
+                              img{
+                                    width:500px;
+                                    height: 300px;
+                              }
+                        }
+
+                        .toggle{
+                              z-index: 58;
+                              position: absolute;
+                              width: 100px;
+                              height: 100px;
+                              background-color: black;
+                              border-radius: 50%;
+                              left: 210px;
+                              top: 140px;
+                              transform: scaleZ(1) rotateZ(10deg) rotateX(40deg) rotateY(5deg);
+                              
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              transition: 0.8s all ease-in-out;                              
+                              span{
+                                    color: #fff;
+                                    line-height: 100%;
+                                    font-size: 17px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.2rem; 
+                                    position: relative;
+                                    top: 10px; 
+                                    text-shadow: -1px 1px 5px rgba(99, 96, 96, 0.473);
+                              }
+                              .name{
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 32px;
+                                    text-shadow: -1px 1px 5px rgba(99, 96, 96, 0.473);
+                              }
+                            
+                              .circle{
+                                    width:102%;
+                                    height: 102%;
+                                    background-color: #fff;
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    top: -1px;
+                                    left: -1px;
+                                    opacity: 0.5;
+                                    animation: ani 5s linear infinite;
+                                    box-shadow: inset -1px -1px 5px 0 rgba(0, 0, 0, 0.5),
+                                    inset -2px -2px 5px 0 rgba(0, 0, 0, 0.5);
+                                    @keyframes ani {
+                                          0%{
+                                              opacity: 1;
+                                          }
+                                          50%{
+                                               opacity: 0.5;
+                                          }
+                                          100%{
+                                                opacity: 1;
+                                          }
+                                    }
+                              }
+                        }
+                        ////@at-root
+                        .toggle_name{
+                              z-index: 58;
+                              position: absolute;
+                              width: 120px;
+                              height: 120px;
+                              background-color: black;
+                              border-radius: 50%;
+                              left: 480px;
+                              top: 330px;
+                              transform: scaleZ(1) rotateZ(10deg) rotateX(40deg) rotateY(-0deg);
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              transition: 0.8s all ease-in-out;                              
+                              span{
+                                    color: #fff;
+                                    line-height: 100%;
+                                    font-size: 17px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.2rem; 
+                                    position: relative;
+                                    top: 5px;
+                                    left:30px;
+                                    text-transform: capitalize;
+                                    line-height: 150%;
+                                    transform: rotateZ(10deg) scaleZ(1);
+                                    text-shadow: -1px 1px 5px rgba(99, 96, 96, 0.473);
+                              }
+                              
+                            
+                              .circle{
+                                    width:102%;
+                                    height: 102%;
+                                    background-color: #fff;
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    top: -1px;
+                                    left: -1px;
+                                    opacity: 0.1;
+                                    animation: ani 5s linear infinite;
+                                    box-shadow: inset -1px -1px 5px 0 rgba(0, 0, 0, 0.5),
+                                    inset -2px -2px 5px 0 rgba(0, 0, 0, 0.5);
+                                    @keyframes ani {
+                                          0%{
+                                              opacity: 0.8;
+                                          }
+                                          50%{
+                                               opacity: 0.5;
+                                          }
+                                          100%{
+                                                opacity: 0.8;
+                                          }
+                                    }
+                              }
+                        }
+                 }
+                        
+            }
+            .content{
+                  background:linear-gradient(90deg,rgba(221, 220, 220, 0.082),rgb(230, 230, 230),rgb(252, 252, 252));
+                  position: relative;
+                  
+                  &::before{
+                        position: absolute;
+                        content: '';
+                        width: 80%;
+                        height: 80%;
+                        background-color: red;
+                        top: 50px;
+                        left: 50px;
+                        box-shadow: inset 0 0 0 300px rgb(177, 177, 177),1px 1px 10px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 30px 1px rgba(0, 0, 0, 0.5),-5px -5px 20px 2px rgba(0, 0, 0, 0.2);
+                        opacity: 0.2;
+                        
+                  }
+                  .container_box{
+                        width: 100%;
+                        height: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(2,280px);
+                        // background-color: red;
+                        
+                        .time{
+                              // margin-top: 20px;
+                              display: grid;
+                              padding-top: 100px;
+                              padding-left: 50px;
+                              padding-right: 70px;
+                              column-gap: 10px;
+                              grid-template-rows: repeat(3,40px);
+                              // background-color: red;
+                              place-items: center;
+                              letter-spacing: 0.1rem;
+                              font-size: 18px;
+                              .time_open{
+                                    display: grid;
+                                    grid-template-columns: repeat(2,1fr);
+                                    place-items: center;
+                                    column-gap: 30px;
+                                    letter-spacing: 0.2rem;
+                                    font-size: 16px;
+                              }
+                        }
+                        .context{
+                              width: 100%;
+                              height: 100%;
+                              position: relative;
+                              
+                              .container_boxx{
+                                    width: 100%;
+                                    height: 100%;
+                                    display: grid;
+                              grid-template-rows: (3,50px) ;
+                              grid-template-columns: 1fr;
+                              padding: 50px;
+                              padding-left: 60px;
+                              padding-right: 80px;
+                              padding-top: 20px;
+                              transition: all 0.5s ease-in-out;
+                              &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 100px;
+                                    height: 5px;
+                                    background-color: black;
+                                    top: -20px;
+                                    animation: 5s al infinite linear;
+                              transition: all 0.5s ease-in-out;
+                              animation-delay: 0.2s;
+                              box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+                                    @keyframes al {
+                                          from{
+                                                transform: translateX(0px);
+                                          }
+                                          to{
+                                                transform: translateX(378px);
+                                          }
+                                    }
+                              }
+                                    
+                              .info{
+                                    display: grid;
+                                    position: relative;
+                                    left: 50px;
+                                    // column-gap: 10px;
+                                    grid-template-rows: 50px;
+                                    grid-template-columns: 50px 200px;
+                                    // background-color: red;
+                                    place-items: center;
+                                    letter-spacing: 0.1rem;
+                                    font-size: 18px;
+                                    img{
+                                          width: 80%;
+                                          height: auto;
+                                    }
+                              }
+                              }
+                        
+                              }
+                  
+            }     }
+      }
+}

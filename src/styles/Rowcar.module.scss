@@ -1,0 +1,31 @@
+.container_product{
+      width: 85%;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+
+      // background-color: red;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .pruduct{
+            width: 230px;
+            height: 90%;
+            margin: 0 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 5px 1px rgba(134, 129, 129, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                  width: 80%;
+                  height: auto;
+            }
+            &.pruduct:nth-child(1){
+                  margin-left: 0;
+            }
+      }
+}
