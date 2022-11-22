@@ -30,3 +30,23 @@
       opacity:1 !important;
 }
 }
+.search{
+      left:250px !important;
+      margin-left:100px;
+      margin-right:10px;
+      position:relative !important;
+}
+
+.logout{
+      color: red !important;
+      &:hover{
+            color: black !important;
+      }
+      
+}
+
+.width{
+      min-width: 8.8rem !important;
+      left: -9px !important;
+      
+}
