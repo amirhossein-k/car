@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Container fluid>
       <Navbars />
-      {/* <Swipper /> */}
+      <Swipper />
       <SearchBox />
     </Container>
   );
