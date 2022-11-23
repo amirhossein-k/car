@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Navbars from "./components/Navbars";
 import Swipper from "./components/Swipper";
 import SearchBox from "./components/SearchBox";
+import CarsShow from "./components/CarsShow";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbars />
       <Swipper />
       <SearchBox />
+      <CarsShow />
     </Container>
   );
 };
