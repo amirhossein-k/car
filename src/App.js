@@ -5,6 +5,7 @@ import Navbars from "./components/Navbars";
 import Swipper from "./components/Swipper";
 import SearchBox from "./components/SearchBox";
 import CarsShow from "./components/CarsShow";
+import Info from "./components/Info";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Swipper />
       <SearchBox />
       <CarsShow />
+      <Info />
     </Container>
   );
 };
