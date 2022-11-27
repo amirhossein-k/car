@@ -1,21 +1,20 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styled from "styled-components";
-import Navbars from "./components/Navbars";
-import Swipper from "./components/Swipper";
-import SearchBox from "./components/SearchBox";
-import CarsShow from "./components/CarsShow";
-import Info from "./components/Info";
-
+import RegisterScreen from "./screens/RegisterScreen/RegisterScreen";
+import Header from "./components/Header";
+import LandingPage from "./screens/LandingPage/LandingPage";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 const App = () => {
   return (
-    <Container fluid>
-      <Navbars />
-      <Swipper />
-      <SearchBox />
-      <CarsShow />
-      <Info />
-    </Container>
+    <BrowserRouter>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" exact element={<LandingPage />} />
+          <Route path="/register" exact element={<RegisterScreen />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 };
 
