@@ -174,47 +174,32 @@
                   .container_box{
                         width: 100%;
                         height: 100%;
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: repeat(2,280px);
+         
                         // background-color: red;
                         
                         .time{
                               // margin-top: 20px;
-                              display: grid;
-                              padding-top: 100px;
-                              padding-left: 50px;
-                              padding-right: 70px;
-                              column-gap: 10px;
-                              grid-template-rows: repeat(3,40px);
+                    
+                          
+                   
+                       
                               // background-color: red;
                               place-items: center;
                               letter-spacing: 0.1rem;
                               font-size: 18px;
                               .time_open{
-                                    display: grid;
-                                    grid-template-columns: repeat(2,1fr);
+                  
                                     place-items: center;
-                                    column-gap: 30px;
+                       
                                     letter-spacing: 0.2rem;
                                     font-size: 16px;
                               }
                         }
                         .context{
-                              width: 100%;
-                              height: 100%;
-                              position: relative;
+                        
                               
                               .container_boxx{
-                                    width: 100%;
-                                    height: 100%;
-                                    display: grid;
-                              grid-template-rows: (3,50px) ;
-                              grid-template-columns: 1fr;
-                              padding: 50px;
-                              padding-left: 60px;
-                              padding-right: 80px;
-                              padding-top: 20px;
+                                 
                               transition: all 0.5s ease-in-out;
                               &::before{
                                     content: '';
@@ -238,22 +223,7 @@
                                     }
                               }
                                     
-                              .info{
-                                    display: grid;
-                                    position: relative;
-                                    left: 50px;
-                                    // column-gap: 10px;
-                                    grid-template-rows: 50px;
-                                    grid-template-columns: 50px 200px;
-                                    // background-color: red;
-                                    place-items: center;
-                                    letter-spacing: 0.1rem;
-                                    font-size: 18px;
-                                    img{
-                                          width: 80%;
-                                          height: auto;
-                                    }
-                              }
+                              
                               }
                         
                               }
